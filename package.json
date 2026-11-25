@@ -1,0 +1,14 @@
+{
+  "name": "escala-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sitio web de Escala Marketing Digital (Mérida, Yucatán)",
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
