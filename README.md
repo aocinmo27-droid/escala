@@ -6,25 +6,26 @@ Por ahora es solo el frontend (HTML, CSS y TypeScript). Más adelante se conecta
 
 ## Estructura
 
+Todos los archivos están en la raíz para poder subirlos a GitHub sin carpetas:
+
 ```
-index.html        Estructura de la página
-css/styles.css    Estilos
-src/main.ts       Interacciones en TypeScript (menú móvil, encabezado, animaciones, portafolio)
-dist/main.js      JavaScript compilado desde src/main.ts (es lo que carga el navegador)
-assets/           Logo, ícono e imágenes del portafolio
-tsconfig.json     Configuración de TypeScript
+index.html     Estructura de la página
+styles.css     Estilos
+main.ts        Interacciones en TypeScript
+main.js        JavaScript compilado desde main.ts (es lo que carga el navegador)
+*.png, *.jpg   Logo, ícono e imágenes del portafolio
 ```
 
 ## Cómo trabajar
 
 ```bash
 npm install       # instala TypeScript
-npm run build     # compila src/main.ts → dist/main.js
+npm run build     # compila main.ts → main.js
 npm run watch     # recompila cada vez que guardas
 npm start         # sirve el sitio en local
 ```
 
-Después de editar `src/main.ts` hay que compilar para que el cambio se vea en la página.
+Después de editar `main.ts` hay que compilar para que el cambio se vea en la página.
 
 ## Secciones
 
@@ -37,4 +38,4 @@ Después de editar `src/main.ts` hay que compilar para que el cambio se vea en l
 
 ## Siguiente paso: backend
 
-Los proyectos del portafolio están en el arreglo `PROYECTOS` de `src/main.ts`. Cuando exista la API en Node + PostgreSQL, ese arreglo se puede reemplazar por una llamada como `fetch("/api/proyectos")` sin cambiar el resto de la página.
+Los proyectos del portafolio están en el arreglo `PROYECTOS` de `main.ts`. Cuando exista la API en Node + PostgreSQL, ese arreglo se puede reemplazar por una llamada como `fetch("/api/proyectos")` sin cambiar el resto de la página.
